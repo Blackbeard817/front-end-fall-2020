@@ -1,0 +1,143 @@
+img {
+	width: 300px;
+	box-shadow: 3px 3px #90be6d;
+
+}
+
+img.hero {
+
+width: 100%;
+
+}
+
+body {
+	background-color: #F6F4D2;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body.homepage {
+	background-image: url('https://i.pinimg.com/originals/70/5d/f0/705df0a076047f331feaec389a7207d3.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	background-color: #F6F4D2;
+	
+	font-family: 'Josefin Sans', sans-serif;
+}
+body.product {
+	font-size: 25px;
+	background-color: #F6F4D2;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+	text-align: center;
+	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+	font-size: 150px;
+	padding: 15px;
+	color: #A44A3F;
+	box-shadow: 5px 8px black;
+	margin: 0;
+}
+
+h1.product{
+	text-align: center;
+	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+	font-size: 150px;
+	padding: 15px;
+	color: #A44A3F;
+	box-shadow: 5px 8px black;
+	margin-top: 0px;
+}
+
+
+
+.logo {
+	background-image: url("https://pics.livejournal.com/fenilla/pic/0000569b/s640x480">);
+	width: 20px;
+	background-position: left top;
+
+
+}
+	
+
+/*button {
+	background-color: #FFBA08;
+	width: 100px;
+	margin-left: 650px;
+	transition-duration: 0.4s;
+  	cursor: pointer;
+  	
+  
+} */
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+
+}
+
+.button1: hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h2,h3,h4 {
+	color:#A44A3F;
+
+}
+p {
+	font-size: 25px;
+}
+.call-to-action {
+    color: #fff;
+    background-color: #94714F;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+.col30 {
+
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px; 
+
+}
+.col50 {
+
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 20px; 
+
+}
+.col70 {
+width: 70%;
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+
+}
+
+/*shopping cart code */
+.cart {
+width: 100%;
+
+}
+
+
+.cart tbody
+
