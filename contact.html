@@ -4,16 +4,17 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-wdth, initial-scale=1.0">
-	<title>Contact Us</title>
+		<title>Contact Us</title>
 	
 </head>
-<body>
-	<h1>Contact Us</h1>
-	<ul>
-		<li><a href="index.html">Home</a></li> <br>
-		<br>
-		<Br>
-		
+<body class="contact">
+	<a href="index.html">Home</a>
+		<a href="products.html">Products</a>
+		<a href="checkout.html">Checkout</a>
+		<a href="contact.html">Contact Us</a>
+	<h1 class="contact">Contact Us</h1>
+	<br>
+	<br>		
 	<form method="POST" action="https://webhook.site/0597b8c1-9ccd-421d-999a-8fb2609d61af">
 		<label for="firstName">First Name</label>
 		<input type="text" name="firstName" id="firstName" placeholder="Boba" required />
@@ -27,10 +28,14 @@
 		<input type="email" name="email" id="email" placeholder="you@example.com" required />
 		<br>
 
+		<label for="Telephone">Telephone</label>
+		<input type="phone" name="phone" id="phone" placeholder="86753409" required />
+		<br>
+
 		<label for="message">Message</label> 
 		<br>
 		<textarea name="message" id="message" cols="30" rows="10" placeholder="Choose your words wisely"></textarea>
-
+		<br>
 		<button>Submit</button>
 		
 	</form>
