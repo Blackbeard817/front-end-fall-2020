@@ -1,9 +1,9 @@
 
 
-                        /* IMAGE CHANGES */
+                      																														  /* IMAGE CHANGES */
 
 img {
-	width: 300px;
+	width: 100%;
 	box-shadow: 3px 3px #90be6d;
 
 }
@@ -15,20 +15,17 @@ width: 100%;
 }
 
 img.thumb {
-	width: 290px;
+	width: 306px;
 	height: 144px;
-	margin-right: 5px;
+	margin-right: 0px;
 }
 
-/* .nav {
-	
-    background-color: #94714F;
-    padding: 5px;
-    margin: 20px;
-    text-decoration: none; 
-} */
+ .nav {
+	display: inline;
+   
+} 
 
-                       /*   BODY CHANGES */
+                     																													  /*   BODY CHANGES */
 body {
 	background-color: #F6F4D2;
 	font-family: 'Josefin Sans', sans-serif;
@@ -54,7 +51,7 @@ body.contact {
 	background-size: contain;
 	}
 
-                         /*  H1 Changes  */
+                        																													 /*  H1 Changes  */
 
 
 
@@ -66,13 +63,14 @@ h1{
 	color: #FFBA08;
 	box-shadow: 5px 8px black;
 	margin: 0;
+	margin-bottom: 25px;
 }
 
 h1.product{
 	text-align: center;
 	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
-	font-size: 150px;
-	padding: 15px;
+	font-size: 6em;
+	padding: .1em;
 	color: #FFBA08;
 	box-shadow: 5px 8px black;
 	margin-top: 0px;
@@ -106,7 +104,7 @@ h1.cart {
 
 }
 
-                            /* LISTS CHANGES */
+                            																											/* LISTS CHANGES */
 
 ul {
 	display: inline-block;
@@ -120,6 +118,7 @@ li.thumb {
 	display: inline-block;
 	padding:0;
 	margin-right: 16px;
+
 }	
 .thumb li: last-child {
 	margin-right: 0px;
@@ -127,12 +126,16 @@ li.thumb {
 ul.thumb {
 	display: inline-block;
 	padding:0;
-	height: 30px;
+	margin-top: 8px;
+
 }
 
 
 
-                           /*  BUTTON CHANGES */
+
+
+
+                          																											 /*  BUTTON CHANGES */
 
 .button {
   background-color: #4CAF50; /* Green */
@@ -173,58 +176,9 @@ h2,h3,h4 {
 p {
 	font-size: 25px;
 }
-.call-to-action {
-    background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-left: 57px;
 
-}
 
-.call-to-action.checkout {
-    color: #fff;
-    background-color: black;
-    padding: 5px;
-    margin: 20px;
-    text-decoration: none;
-
-}
-
-.col30 {
-
-	width: 100%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 20px; 
-	text-align: center;
-
-}
-.col50 {
-
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	box-sizing: border-box;
-	padding: 20px; 
-
-}
-.col70 {
-width: 100%;
-display: inline-block;
-vertical-align: top;
-padding: 20px;
-
-}
-
-/*shopping cart code */
+																															/*shopping cart code */
 .cart-page {
 width: 100%;
 border-top: 2px solid #94714F;
@@ -232,12 +186,7 @@ border-bottom: 2px solid #94714F;
 padding: 10px;
 }
 
-table.cart-page {
-	margin-right: 20px;
-}
 
-th {
-	margin-right: 50px;
 }
 .cart-page tbody {
 	border-top: 2px solid red;
@@ -250,11 +199,14 @@ th {
 	border-top: 2px solid red;
 
 }
+h3.cart {
+	text-align: center;
+}
 
 
 
 
-                           /*     Form   */
+                          																										 /*     Form   */
 
   footer {
   	text-align: center;
@@ -266,3 +218,79 @@ th {
 	margin-top: 0px;
 
   }                
+
+																																/* Media Moble Changes */
+
+@media screen and (max-width: 650px) {
+
+	body.homepage {
+background-color: #F6F4D2;
+background-image: none;
+
+	}
+
+img.thumb {
+    width: 301px;
+    height: 144px;
+    margin-right: 0px;
+
+}
+
+img.cart {
+	width: 100px;
+	height: 70px;
+}
+
+}
+
+
+																															/* bootstrap overrides */
+
+.btn-success:hover,
+
+.btn-success {
+	border-radius: 0;
+	margin-left: 47%;
+	
+
+}
+.btn-success:hover {
+
+	background-color: #FFBA08;
+	color: #94714F;
+}
+
+
+.container-product {
+	margin: 0%;
+}
+
+.container-cart {
+	margin: 0%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.conainter {
+	margin-top: 25px;
+	text-align: center;
+}
+.row-cart {
+	text-align: center;
+	
+}
+.row-cart1 {
+	border-bottom-color: 2px solid black;
+}
+
+
+form.contact {
+
+ margin-left: 45%;
+}
+
+@media screen and (max-width: 750px){
+	body {
+		background-image: none;
+	}
+}

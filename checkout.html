@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Check Out</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,54 +16,63 @@
 		<a href="contact.html">Contact Us</a>
 	<h1 class="cart">Shopping Cart</h1>
 
-	<div class="col70">
+	
 		<h2>Shopping Cart</h2>
-		<table class="cart-page">
-			<thead>
-				<tr>
-					<th>Product Details</th>
-					
-					<th>Quantity</th>
-					
-					<th>Price</th>
-				
-					<th>Total</th>					
-
-				</tr>
-
-			</thead>
-
-			<tbody>
-
-				<tr>
-					
-					<td> <h4> Fell and Feast Package </h4><img class="thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxnxxDODQBq245So6NEyrWtQHdgo9-nX81Q&usqp=CAU">  </td>
+	<div class="container-cart">
+  		
 
 
-					<td>[ 2 ]</td>
+  		<div class="row">
+    		<div class="col-sm">
+      				Product
+    		</div>
 
-					<td> 3000 Credits <br> + Funeral Cost 1000 Credits</td>
+    		<div class="col-sm">
+      				Details
+    		</div>
+    		<div class="col-sm">
+      				Quantity
+    		</div>
+    		<div class="col-sm">
+    				Price		
+    		</div>
+  		</div>
+		<div class="row">
+			<div class="col-sm">
+      				<img class="cart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxnxxDODQBq245So6NEyrWtQHdgo9-nX81Q&usqp=CAU"> 
+    		</div>
 
-					<td> 4000 credits </td>					
+    		<div class="col-sm">
+      				<h4> Fell and Feast Package </h4>
+    		</div>
+    		<div class="col-sm">
+      				[2]
+    		</div>
+    		<div class="col-sm">
+    				3000 Credits + Funeral Cost 1000 Credits
+    		</div>		
+		</div>	
+	
+  		<div class="row-cart">
+  			<div class="col-12">
+  			<h3 class="cart">ORDER SUMMERY</h3>
+				<ul>
+					<li> Sub Total: 6000 Credits</li><br>
+					<li> Funeral expenses tax: 2000 Credits</li><br>
+					<li> Grand Total: 8000 Credits</li><br>
 
-				</tr>
-			</tbody>
-		</table>
-	</div><!--
-	--><div class="col30">
-		<h3>ORDER SUMMERY</h3>
-		<ul>
-			<li> Sub Total: 6000 Credits</li><br>
-			<li> Funeral expenses tax: 2000 Credits</li><br>
-			<li> Grand Total: 8000 Credits</li><br>
+
+				</ul>
+  			</div>
+  		</div>
+	</div>
 
 
-		</ul><br>
 
-		<button class="button button1">CheckOut</button>
+		<button class="btn btn-success">CheckOut</button>
 	</div>
 	<br>
-	<br>
+	<br> 
 	<footer> <i>*** Fett's Filets is not responsible for any loss of life or limb. This package is not recomended for the weak, sluggish, mentally disabled or lack of experience and common sense (including children)</i></footer>
 </body>
 </html>
