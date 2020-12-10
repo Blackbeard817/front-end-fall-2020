@@ -1,5 +1,9 @@
+
+
+                      																														  /* IMAGE CHANGES */
+
 img {
-	width: 300px;
+	width: 100%;
 	box-shadow: 3px 3px #90be6d;
 
 }
@@ -10,6 +14,18 @@ width: 100%;
 
 }
 
+img.thumb {
+	width: 306px;
+	height: 144px;
+	margin-right: 0px;
+}
+
+ .nav {
+	display: inline;
+   
+} 
+
+                     																													  /*   BODY CHANGES */
 body {
 	background-color: #F6F4D2;
 	font-family: 'Josefin Sans', sans-serif;
@@ -29,46 +45,97 @@ body.product {
 	background-color: #F6F4D2;
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+body.contact {
+	background-repeat: no-repeat;
+	background-size: contain;
+	}
+
+                        																													 /*  H1 Changes  */
+
+
+
 h1{
 	text-align: center;
 	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
 	font-size: 150px;
 	padding: 15px;
-	color: #A44A3F;
+	color: #FFBA08;
 	box-shadow: 5px 8px black;
 	margin: 0;
+	margin-bottom: 25px;
 }
 
 h1.product{
 	text-align: center;
 	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
-	font-size: 150px;
-	padding: 15px;
-	color: #A44A3F;
+	font-size: 6em;
+	padding: .1em;
+	color: #FFBA08;
 	box-shadow: 5px 8px black;
 	margin-top: 0px;
 }
 
+h1.contact{
+	text-align: center;
+	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+	font-size: 85px;
+	padding: 15px;
+	color: #FFBA08;
+	box-shadow: 5px 8px black;
+	margin-top: 0px;
 
+}
+
+h1.cart {
+	text-align: center;
+	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+	font-size: 85px;
+	padding: 15px;
+	color: #FFBA08;
+	box-shadow: 5px 8px black;
+	margin-top: 0px;
+}
 
 .logo {
 	background-image: url("https://pics.livejournal.com/fenilla/pic/0000569b/s640x480">);
 	width: 20px;
 	background-position: left top;
 
+}
+
+                            																											/* LISTS CHANGES */
+
+ul {
+	display: inline-block;
+}
+
+li {
+	display: inline-block;
+}
+
+li.thumb {
+	display: inline-block;
+	padding:0;
+	margin-right: 16px;
+
+}	
+.thumb li: last-child {
+	margin-right: 0px;
+}
+ul.thumb {
+	display: inline-block;
+	padding:0;
+	margin-top: 8px;
 
 }
-	
 
-/*button {
-	background-color: #FFBA08;
-	width: 100px;
-	margin-left: 650px;
-	transition-duration: 0.4s;
-  	cursor: pointer;
-  	
-  
-} */
+
+
+
+
+
+                          																											 /*  BUTTON CHANGES */
 
 .button {
   background-color: #4CAF50; /* Green */
@@ -82,13 +149,24 @@ h1.product{
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  margin-left: 350px;
+
 
 
 }
 
-.button1: hover {
-  background-color: #4CAF50;
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
   color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
 }
 
 h2,h3,h4 {
@@ -98,46 +176,121 @@ h2,h3,h4 {
 p {
 	font-size: 25px;
 }
-.call-to-action {
-    color: #fff;
-    background-color: #94714F;
-    padding: 5px;
-    margin: 20px;
-    text-decoration: none;
 
-}
 
-.col30 {
-
-	width: 30%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 20px; 
-
-}
-.col50 {
-
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	box-sizing: border-box;
-	padding: 20px; 
-
-}
-.col70 {
-width: 70%;
-display: inline-block;
-vertical-align: top;
-padding: 20px;
-
-}
-
-/*shopping cart code */
-.cart {
+																															/*shopping cart code */
+.cart-page {
 width: 100%;
+border-top: 2px solid #94714F;
+border-bottom: 2px solid #94714F;
+padding: 10px;
+}
+
+
+}
+.cart-page tbody {
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+	text-align: center;
+
+}
+
+.cart-page thead {
+	border-top: 2px solid red;
+
+}
+h3.cart {
+	text-align: center;
+}
+
+
+
+
+                          																										 /*     Form   */
+
+  footer {
+  	text-align: center;
+	background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+	font-size: 15px;
+	padding: 15px;
+	color: #FFBA08;
+	box-shadow: 5px 8px black;
+	margin-top: 0px;
+
+  }                
+
+																																/* Media Moble Changes */
+
+@media screen and (max-width: 650px) {
+
+	body.homepage {
+background-color: #F6F4D2;
+background-image: none;
+
+	}
+
+img.thumb {
+    width: 301px;
+    height: 144px;
+    margin-right: 0px;
+
+}
+
+img.cart {
+	width: 100px;
+	height: 70px;
+}
 
 }
 
 
-.cart tbody
+																															/* bootstrap overrides */
 
+.btn-success:hover,
+
+.btn-success {
+	border-radius: 0;
+	margin-left: 47%;
+	
+
+}
+.btn-success:hover {
+
+	background-color: #FFBA08;
+	color: #94714F;
+}
+
+
+.container-product {
+	margin: 0%;
+}
+
+.container-cart {
+	margin: 0%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.conainter {
+	margin-top: 25px;
+	text-align: center;
+}
+.row-cart {
+	text-align: center;
+	
+}
+.row-cart1 {
+	border-bottom-color: 2px solid black;
+}
+
+
+form.contact {
+
+ margin-left: 45%;
+}
+
+@media screen and (max-width: 750px){
+	body {
+		background-image: none;
+	}
+}
