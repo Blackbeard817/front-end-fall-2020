@@ -1,89 +1,169 @@
-<html>
+<html lang="en">
 <head>
-	<!-- Fett color scheme: 90be6d (Light green), yellow (#FFBA08), red (A44A3F), Brown (94714F), Light green (F6F4D2) --> 
-	<title>Fett's Fliets</title>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="homepage">
-	<a href="index.html">Home</a>
-		<a href="products.html">Products</a>
-		<a href="checkout.html">Checkout</a>
-		<a href="contact.html">Contact Us</a>
-	<h1>Fett's Filets</h1>
-		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f32c9c8079.js"></script>
+	<title>To do list</title>
 
+	<Style>
+
+		.done {
+			text-decoration: line-through;
+			color: green;
+		}
+
+		#task-list li {
+			margin-bottom: 10px;
+		}
+		.task-item {
+			display: inline-block;
+			width: 200px;
+		}
+
+		body {
+			background-color:#ffc107 ;
+			
+		}
+		h1 {
+			text-align: center;
+			font-size: 50px;
+			color: red;
+		}
+		input {
+
+			    margin-bottom: 17px;
+		}
+		ul {
+			    margin-top: 15px;
+			
+		}
+	</Style>
+
+</head>
+
+
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<h1> TO DO List </h1>
+
+				<input id="new-task"  required= "required" type="text" class="form-control" placeholder="add your tasks...">
+				<button id="add-task" class="btn btn-success">Add Task</button>
+
+
+
+				<ul id="task-list"></ul>
+
+
+				<button id="clear-list" class="btn btn-secondary">CLear List</button>
+
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+		
+<script>
+	var tasks = [];
+
+	document.getElementById("add-task").addEventListener('click', addTask);
+	document.getElementById("clear-list").addEventListener('click', function (){ 
+		tasks = [];
+		listTasks();
+	});
 
 	
 
-		<h2>Starters</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>Womprat Soup</h3>	
-				<img src="https://pics.livejournal.com/fenilla/pic/0000569b/s640x480">
-			</td>
-			<td>
-				<p>
-					This is where it all began.<br>
-					Who doesnt remebmer mom making a hearty Womprat soup? <br>
-					 Made inside reclaimed pots from Jawa's our soup will take you <br>
-					home when you smell those local Tuskin Raider spices. Served<br>
-					with your choice of Blue Milk or Fizzwater
-					
-				</p>
+	function addTask() {
 
-				<a href="" class="call-to-action">Add to Bounty</a>
+		let newTask = document.getElementById('new-task');
+		console.log('adding a task...' + newTask.Value );
 
-			</td>
-		</tr>
-	</table>
+		tasks.push(newTask.value);
 
-	<h2>Fett's Famous Filets</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>Sarlec Filet Mignon</h3>
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFRmHCbNikAQxu_TbDYNSpTCUe9SVH_Dv8Gg&usqp=CAU" alt="Filet Mignon" width="200px" name="Steak">
+		newTask.value = '';
 
-			</td>
-			<td>
-				<p>
-					Treat yourself to one of the most suculent meats in the galaxy. <br>
-					 Harvested locally, our butcher offers the following cuts:
-					<ul>
-						<li>Tentacle Filet Mignon</li>
-						<li>Beak Chuck Steak</li>
-						<li>Bone-in Strip Steak </li>
-					</ul>
-					All meat cooked to medium rare - This is the way. 
-				</p>
+		console.log(tasks);
 
-				<a href="" class="call-to-action">Add to Bounty</a>
+		listTasks();
+	}
 
-			</td>
-		</tr>
-	</table>
 
-	<h2>Dessert</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>The Scruffy Nerfherder</h3>
-				<img src="https://assets.bonappetit.com/photos/57ace50bf1c801a1038bc8af/16:9/w_400%2Cc_limit/blueberry-pecan-galette2.jpg">
-			</td>
-			<td>
-				<p>
-					Sand Crusted Bantha Fat - This is a favortie among the locals <br>
-					 for it's robust flavor and unforgettable smell. 
-					
-				</p>
+	function listTasks()  {
 
-				<a href="products.html" class="call-to-action">Add to Bounty</a>
-				
-				
-			</td>
-		</tr>
-	</table>
+		let taskList = document.getElementById('task-list');
+
+		//let taskHtml = "";
+
+		taskList.innerHTML = '';
+
+		tasks.forEach(function (task){
+			//taskHtml += '<li>' + task + '</li>';
+
+			let newTask = document.createElement('li');
+
+			let taskDone = document.createElement('input');
+			taskDone.type = 'checkbox';
+			taskDone.addEventListener('change', function(event){
+
+				if (event.target.checked) {
+				event.target.nextSibling.classList.add('done');
+				}
+
+				else {
+					event.target.nextSibling.classList.remove('done');
+				}
+			});
+
+			let taskText = document.createElement('span');
+			taskText.classList.add('task-item');
+			taskText.innerText = task;
+
+			let taskRemove =document.createElement('button');
+			taskRemove.innerText = 'Remove';
+			taskRemove.classList.add('btn');
+			taskRemove.classList.add('btn-danger');
+			//taskRemove.innerHTML = '<i class="fas fa-trash-alt"></i>';
+			taskRemove.addEventListener('click', removeTask);
+
+
+			newTask.appendChild(taskDone);
+			newTask.appendChild(taskText);
+			newTask.appendChild(taskRemove);
+
+			taskList.appendChild(newTask); 
+
+		})
+
+		//taskList.innerHTML = taskHtml;
+
+
+
+	}
+	function removeTask(event) {
+
+		tasks = tasks.filter(function(task){
+			if (task == event.target.previousSibling.innerText){
+				return false;
+			
+		}
+			else {
+				return true; 
+			}
+
+	});
+		listTasks();
+	}
+
+		
+</script>
+	
+
 </body>
 </html>
